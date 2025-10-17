@@ -17,13 +17,3 @@ ADD CONSTRAINT fk_user
 
 COMMIT;
 
--- Down Migration
-BEGIN;
-
-ALTER TABLE transactions
-DROP CONSTRAINT fk_user,
-DROP COLUMN user_id;
-
-DROP TABLE IF EXISTS users;
-
-COMMIT; 

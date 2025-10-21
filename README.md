@@ -9,7 +9,7 @@ A full-stack, containerized personal finance management app built with React, No
 - [Features](#features)
 - [System Architecture](#system-architecture)
 - [Data Model](#data-model)
-- [Setup Application](#setup--installation)
+- [Setup Application](#setup-application)
 - [Usage in Website](#usage)
 ---
 
@@ -175,7 +175,7 @@ erDiagram
 
 ---
 
-## Usage in Website
+## Usage
 - **Sign up** for a new account.
 - **Log in** to access your dashboard.
 - **Add transactions** (income/expenses) via the dashboard modal.

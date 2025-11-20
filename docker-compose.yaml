@@ -35,6 +35,7 @@ services:
       - postgres-data:/var/lib/postgresql/data
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "${POSTGRES_USER}"]
+      # test: ["CMD-SHELL", "pg_isready", "-U", "${POSTGRES_USER}"] # change it to this way if there is an error with the current healthcheck
       interval: 5s
       retries: 5
     restart: always

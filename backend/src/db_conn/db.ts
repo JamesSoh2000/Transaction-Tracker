@@ -1,5 +1,6 @@
 import { Pool, QueryResult } from 'pg';
 
+// Create a pool that is the way to use SQL queries in Typescript
 const pool = new Pool({
   user: process.env.POSTGRES_USER,
   host: process.env.POSTGRES_HOST,
@@ -7,6 +8,7 @@ const pool = new Pool({
   password: process.env.POSTGRES_PASSWORD,
   port: 5432,
 });
+
 
 export const query = (text: string, params?: any[]): Promise<QueryResult> => {
     return pool.query(text, params || []);

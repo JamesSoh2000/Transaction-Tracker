@@ -9,7 +9,8 @@ A full-stack, containerized personal finance management app built with React, No
 - [Features](#features)
 - [System Architecture](#system-architecture)
 - [Data Model](#data-model)
-
+- [Setup Application](#setup-application)
+- [Usage in Website](#usage)
 ---
 
 ## Overview
@@ -152,5 +153,33 @@ erDiagram
 - **expense_types:** Specific types within a category (e.g., Restaurants, Groceries).
 
 ---
+
+## Setup Application
+
+1. **Clone the repository with following commands:**
+   ```sh
+   git clone <repo-url>
+   cd finance-tracker
+   ```
+2. **Start the full stack:**
+   ```sh
+   docker-compose up -d
+   ```
+   - To rebuild: `docker-compose up --build`
+   - To stop: `docker-compose down` (add `-v` to remove volumes)
+3. **Access the app:**
+   - Frontend: [http://localhost:3001](http://localhost:3001)
+   - Backend/API: [http://localhost:3000](http://localhost:3000)
+
+**Note:** Change the frontend port in `docker-compose.yaml` if 3001 is blocked.
+
+---
+
+## Usage
+- **Sign up** for a new account.
+- **Log in** to access your dashboard.
+- **Add transactions** (income/expenses) via the dashboard modal.
+- **View analytics** and charts for your financial overview.
+- **Log out** securely; you'll be auto-logged out if your session expires.
 
 

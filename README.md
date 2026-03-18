@@ -176,10 +176,6 @@ erDiagram
 ---
 
 ## Usage
-- **Sign up** for a new account.
-- **Log in** to access your dashboard.
-- **Add transactions** (income/expenses) via the dashboard modal.
-- **View analytics** and charts for your financial overview.
-- **Log out** securely; you'll be auto-logged out if your session expires.
+
 
 
